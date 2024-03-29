@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <script src="script1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Fun Games - 2048</title>
+</head>
+
+<body>
+    <button class="minimize-btn" id="minibut" onclick="toggleSidebar()"><ion-icon name="grid-outline"></ion-icon></button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+          <img src="logo.jpeg" alt="Logo" width="100">
+        </div>
+        <a href="tictac.html">Tic-Tac-Toe</a>
+        <a href="#">2048</a>
+        <a href="chess.html">Chess</a>
+        <a href="sudoku.html">Sudoku</a>
+      </div>
+      
+    <div class="scoreContainer">
+        <span style="font-size: 75px;">2048</span>
+        <div class="scoretitle">Score: <span id="score">0</span></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div id="result">Game Not Started</div>
+</body>
+
+</html>

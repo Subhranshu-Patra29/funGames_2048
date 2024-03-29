@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+}
+
+.scoreContainer,
+#result {
+    font-family: 'Segoe UI', Tahoma, Genevas, Verdana, sasns-serif;
+    color: chartreuse;
+    margin-left: 480px;
+}
+
+.scoretitle {
+    position: absolute;
+    text-align: center;
+    font-size: 33px;
+    width: 260px;
+    background-color: rgb(44, 41, 41);
+    margin: 30px 0 0 20px;
+    border: 1px solid chartreuse;
+    border-radius: 3px;
+}
+
+.grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 85px 480px;
+    width: max-content;
+    padding: 20px;
+    border: double chartreuse;
+    border-radius: 5px;
+}
+
+.grid div {
+    background-color: darkgrey;
+    text-align: center;
+    font: 1.75em sans-serif;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: chartreuse;
+    border-style: solid;
+}
+
+#result {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    width: 309px;
+    background-color: rgb(44, 41, 41);
+    margin-top: 400px;
+    border: 1px solid chartreuse;
+    border-radius: 3px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 135px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    clip-path: circle();
+    border: rgb(179, 23, 114) 5px double;
+}
+
+.sidebar a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: chartreuse;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.minimize-btn {
+    position: absolute;
+    background-color: rgb(32, 32, 32);
+    color: chartreuse;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    top: 40px;
+    left: 135px;
+    font-size: 30px;
+    border: 2.5px double chartreuse;
+    border-radius: 3px;
+}
